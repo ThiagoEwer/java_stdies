@@ -245,7 +245,7 @@ public class Questoes {
         String charUltimoNome = ultimoNome.substring(0,1);
         int pswAleatorio = random.nextInt(1000008);
         String login = charPrimeiroNome + ultimoNome + "@estudante.edu.br";
-        String senha = charPrimeiroNome + charUltimoNome+pswAleatorio;
+        String senha = charPrimeiroNome + charUltimoNome+charPrimeiroNome+pswAleatorio;
 
         System.out.println("Seu nome é: "+ nomeCompleto);
         System.out.println("Seu login é: " + login);
