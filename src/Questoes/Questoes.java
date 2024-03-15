@@ -240,12 +240,12 @@ public class Questoes {
         int espaco = nomeCompleto.indexOf(' ');
 
         String primeiroNome = nomeCompleto.substring(0,espaco);
-        String charPrimeiroNome = nomeCompleto.substring(0,1);
-        String ultimoNome = nomeCompleto.substring(nomeCompleto.lastIndexOf(' ') + 1); //parte do professor
+        String charPrimeiroNome = nomeCompleto.substring(0,1).toLowerCase();
+        String ultimoNome = nomeCompleto.substring(nomeCompleto.lastIndexOf(' ') + 1).toLowerCase(); //parte do professor
         String charUltimoNome = ultimoNome.substring(0,1);
-
+        int pswAleatorio = random.nextInt(1000008);
         String login = charPrimeiroNome + ultimoNome + "@estudante.edu.br";
-        String senha = charPrimeiroNome + charUltimoNome;
+        String senha = charPrimeiroNome + charUltimoNome+pswAleatorio;
 
         System.out.println("Seu nome é: "+ nomeCompleto);
         System.out.println("Seu login é: " + login);
