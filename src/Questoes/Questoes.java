@@ -58,6 +58,8 @@ public class Questoes {
         String mediaFormatada = String.format("%.2f", media);
         System.out.println("Sua média é: " + mediaFormatada);
 
+        inputTeclado.close();
+
         }
 
     public static void Aula3Exerc3(){
@@ -71,7 +73,7 @@ public class Questoes {
 
         System.out.println(resultado);
 
-        Menu.menu();
+        inputTeclado.close();
     }
 
     public static void Aula3Exerc6(){
@@ -152,8 +154,9 @@ public class Questoes {
             default:
                 System.out.print("OPCAO INVALIDA!!!");
         }
-
+        teclado.close();
     }
+
     public static void Aula4Exerc2() {
             System.out.println("====== CARDAPIO ======");
             System.out.println(" 1 - HAMBURGER - R$:5.00");
@@ -217,8 +220,10 @@ public class Questoes {
                     System.out.print("OPÇÃO INVÁLIDA!!!");
             }
 
+            teclado.close();
             System.out.println("Total: R$" + total);
         }
+
     public static void Aula4Exerc3(){
         System.out.println(" Informe seu nome completo");
         Scanner inputText = new Scanner(System.in);
@@ -226,11 +231,11 @@ public class Questoes {
 
         String primeiroNome = nomeCompleto.substring(0,nomeCompleto.indexOf(" "));
         System.out.println("Seu primeiro nome é: "+primeiroNome);
-
-
-
+        //Incompleto
         }
+
     public static void Aula4Exerc4(){
+        //Falta Ajustar para o exercicio ficar completo.
         Scanner teclado = new Scanner(System.in);
         Random random = new Random();
 
@@ -245,10 +250,13 @@ public class Questoes {
         String charUltimoNome = ultimoNome.substring(0,1);
         int pswAleatorio = random.nextInt(1000008);
         String login = charPrimeiroNome + ultimoNome + "@estudante.edu.br";
-        String senha = charPrimeiroNome + charUltimoNome+charPrimeiroNome+pswAleatorio;
+        String senha = charPrimeiroNome + charUltimoNome+pswAleatorio;
+
+        teclado.close();
 
         System.out.println("Seu nome é: "+ nomeCompleto);
         System.out.println("Seu login é: " + login);
         System.out.println("Sua senha é: " + senha);
     }
+    
 }
