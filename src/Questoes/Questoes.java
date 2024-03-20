@@ -1,5 +1,6 @@
 package Questoes;
 
+import java.security.PublicKey;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.util.Random;
@@ -258,5 +259,6 @@ public class Questoes {
         System.out.println("Seu login é: " + login);
         System.out.println("Sua senha é: " + senha);
     }
+
     
 }

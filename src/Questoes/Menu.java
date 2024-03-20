@@ -13,6 +13,10 @@ public class Menu {
         System.out.println(" 6 - Menu completo");
         System.out.println(" 7 - Tratando Nomes");
         System.out.println(" 8 - Gerador de Logins e Senhas Automaticos");
+        System.out.println(" 9 - Estruturas de repeticao - laco FOR - 1");
+        System.out.println(" 10 - Estruturas de repeticao - laco FOR - 2");
+        System.out.println(" 11 - Estruturas de repeticao - laco FOR - 3");
+        System.out.println(" 12 - Estruturas de repeticao - laco FOR - 4");
         System.out.println("------------------------------------------------");
         System.out.println("Digite um numero de um exercicio: ");
 
@@ -44,6 +48,18 @@ public class Menu {
                 break;
             case 8:
                 Questoes.Aula4Exerc4();
+                break;
+            case 9:
+                Questoes2.Aula5Exerc2();
+                break;
+            case 10:
+                Questoes2.Aula5Exerc3();
+                break;
+            case 11:
+                Questoes2.Aula5Exerc4();
+                break;
+            case 12:
+                Questoes2.Aula5Exerc5();
                 break;
             default:
                 System.out.println("OPCAO INVALIDA!");
