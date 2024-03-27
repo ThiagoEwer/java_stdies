@@ -120,11 +120,148 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void Next(){
+    public static void MediaNNumeros(){
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Quantas notas deseja calcular a média? ");
+        int n = teclado.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Por favor, insira um número inteiro positivo.");
+            return;
+        }
+
+        double soma = 0;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Digite a nota " + i + ": ");
+            double nota = teclado.nextDouble();
+            soma += nota;
+        }
+
+        double media = soma / n;
+
+        System.out.println("A média das " + n + " notas é: " + media);
+
+        teclado.close();
+    }
+    public static void MediaIdadeTurma(){
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Quantas pessoas na turma? ");
+        int n = teclado.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Por favor, insira um número inteiro positivo.");
+            return;
+        }
+
+        int somaIdades = 0;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Digite a idade da pessoa " + i + ": ");
+            int idade = teclado.nextInt();
+            somaIdades += idade;
+        }
+
+        double mediaIdades = (double) somaIdades / n;
+
+        System.out.println("A média de idade da turma é: " + mediaIdades);
+
+        if (mediaIdades >= 0 && mediaIdades <= 25) {
+            System.out.println("A turma é jovem.");
+        } else if (mediaIdades >= 26 && mediaIdades <= 60) {
+            System.out.println("A turma é adulta.");
+        } else {
+            System.out.println("A turma é idosa.");
+        }
+
+        teclado.close();
+    }
+    public static void MediaAlunoTurma(){
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite a quantidade de turmas: ");
+        int quantidadeTurmas = teclado.nextInt();
+
+        if (quantidadeTurmas <= 0) {
+            System.out.println("Por favor, insira um número inteiro positivo para a quantidade de turmas.");
+            return;
+        }
+
+        int totalAlunos = 0;
+
+        for (int i = 1; i <= quantidadeTurmas; i++) {
+            System.out.print("Digite a quantidade de alunos para a turma " + i + ": ");
+            int quantidadeAlunos = teclado.nextInt();
+
+            if (quantidadeAlunos < 0 || quantidadeAlunos > 40) {
+                System.out.println("Quantidade inválida de alunos. Por favor, insira um número entre 0 e 40.");
+                return;
+            }
+
+            totalAlunos += quantidadeAlunos;
+        }
+
+        double mediaAlunosPorTurma = (double) totalAlunos / quantidadeTurmas;
+
+        System.out.println("O número médio de alunos por turma é: " + mediaAlunosPorTurma);
+
+        teclado.close();
+    }
+    public static void ProgramaCDs(){
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Digite a quantidade de CDs na coleção: ");
+        int quantidadeCDs = teclado.nextInt();
+
+        if (quantidadeCDs <= 0) {
+            System.out.println("Por favor, insira um número inteiro positivo para a quantidade de CDs.");
+            return;
+        }
+
+        double totalInvestido = 0;
+
+        for (int i = 1; i <= quantidadeCDs; i++) {
+            System.out.print("Digite o valor investido no CD " + i + ": ");
+            double valorCD = teclado.nextDouble();
+
+            if (valorCD < 0) {
+                System.out.println("Valor inválido. Por favor, insira um valor não negativo.");
+                i--; // Volta para o mesmo CD para que o usuário insira o valor novamente
+                continue;
+            }
+
+            totalInvestido += valorCD;
+        }
+
+        double valorMedioPorCD = totalInvestido / quantidadeCDs;
+
+        System.out.println("O valor total investido na coleção de CDs é: R$ " + totalInvestido);
+        System.out.println("O valor médio gasto em cada CD é: R$ " + valorMedioPorCD);
+
+        teclado.close();
+    }
+    public static void Tabuada(){
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite o número para a tabuada: ");
+        int numero = teclado.nextInt();
+
+        System.out.print("Digite o valor inicial da tabuada: ");
+        int inicio = teclado.nextInt();
+
+        System.out.print("Digite o valor final da tabuada: ");
+        int fim = teclado.nextInt();
+
+        System.out.println("Tabuada do número " + numero + " de " + inicio + " a " + fim + ":");
+
+        for (int i = inicio; i <= fim; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+
+        teclado.close();
+    }
 
     }
 
-    
-
-
-}

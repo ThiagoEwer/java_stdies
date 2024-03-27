@@ -10,8 +10,13 @@ public class Menu2 {
             System.out.println(" 3 - Fatorial");
             System.out.println(" 4 - <> Valor e a soma de N valores");
             System.out.println(" 5 - <> Valor e a soma de N valores2");
+            System.out.println(" 6 - Media N numeros");
+            System.out.println(" 7 - Media idade por turma");
+            System.out.println(" 8 - Media aluno por turma");
+            System.out.println(" 9 - Controle de CDs");
+            System.out.println(" 10 - Tabuada");
             System.out.println("------------------------------------------------");
-            System.out.println("Digite um numero de um exercicio: ");
+            System.out.println("Digite um numero de um exercicio escolhido: ");
 
 
             Scanner inputTeclado = new Scanner(System.in);
