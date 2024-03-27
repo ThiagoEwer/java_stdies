@@ -39,6 +39,19 @@ public class Menu2 {
                     Lista2.NumerosMaiorMenorSoma_2();
                     break;
                 case 6:
+                    Lista2.MediaNNumeros();
+                    break;
+                case 7:
+                    Lista2.MediaIdadeTurma();
+                    break;
+                case 8:
+                    Lista2.MediaAlunoTurma();
+                    break;
+                case 9 :
+                    Lista2.ProgramaCDs();
+                    break;
+                case 10:
+                    Lista2.Tabuada();
                     break;
                 default:
                     System.out.println("OPCAO INVALIDA!");
