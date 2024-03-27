@@ -1,7 +1,8 @@
 package Questoes;
-
 import com.sun.tools.jconsole.JConsoleContext;
-
+import javax.annotation.processing.SupportedSourceVersion;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Questoes2 {
@@ -54,14 +55,82 @@ public class Questoes2 {
          System.out.println(" O fatorial de "+ numero+ " é: " + fatorial);
 
      }
+     public static void Aula6Exerc1 (){
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Insira a quantidade de pessoas");
+        // int idade = teclado.nextInt();
+        int qtdPessoas = teclado.nextInt();
 
-     /*
-    public static int fatorial(int numero) {
-        int fat = 1;
-        for (int i = numero; i > 0; i--) {
-            fat *= i;
+        int [] pessoas = new int[qtdPessoas];
+
+        for(int i=0; i<pessoas.length;i++){
+            System.out.printf("Informe a idade %d pessoa: ", i+1);
+            pessoas[i]=teclado.nextInt();
         }
-        return fat;
+        int somatorioIdade = 0;
+         for (int pessoa : pessoas) {
+             somatorioIdade += pessoa;
+         }
+        System.out.println("A média de idade é: "+(somatorioIdade/pessoas.length));
+
+    }
+    public static void Aula6Exerc2(){
+        int [] [] matriz = {
+                            {1,2,3},
+                            {4,5,6},
+                            {7,8,9}
+        };
+        for(int linha=0; linha <3; linha++){
+            for(int coluna=0; coluna<3; coluna++){
+                System.out.print(matriz [linha][coluna] + " ");
+            }
+            System.out.println();
         }
-      */
+
+    }
+    public static void Aula6Exerc3(){
+        int [] [] matriz = new int [5] [10];
+        System.out.println(" O numero de linhas da matriz é: "+ matriz.length);
+        System.out.println(" O numero de colunas da matriz é: "+ matriz.length);
+        }
+
+    public static void Aula6Exerc4(){
+        int [] [] matriz = {
+                {1,2},
+                {3,4},
+        };
+
+        int maiorNumero = matriz [0] [0];
+
+        for(int linha=0; linha <2; linha++){
+            for(int coluna=0; coluna<2; coluna++){
+                System.out.print(matriz [linha][coluna] + " ");
+                if(matriz[linha][coluna] > maiorNumero) {
+                    maiorNumero = matriz[linha][coluna];
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println("O maior número na matriz é: " + maiorNumero);
+
+    }
+    public static void Aula6Exerc5(){
+        ArrayList<String> amigos = new ArrayList<String>();
+        amigos.add("Thiago");
+        amigos.add("Ewerton");
+        amigos.add("Daniel");
+       // amigos.remove(2);
+        System.out.println(amigos);
+        System.out.println(amigos.size());
+        print(amigos);
+    }
+    public static void print(ArrayList<String> colecao){
+        for(String amigos: colecao){
+            System.out.println(amigos);
+        }
+        System.out.println("-----------------------------");
+    }
+
+
 }

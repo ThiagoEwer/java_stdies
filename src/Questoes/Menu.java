@@ -17,6 +17,10 @@ public class Menu {
         System.out.println(" 10 - Estruturas de repeticao - laco FOR - 2");
         System.out.println(" 11 - Estruturas de repeticao - laco FOR - 3");
         System.out.println(" 12 - Estruturas de repeticao - laco FOR - 4");
+        System.out.println(" 13 - Exemplo Vetor");
+        System.out.println(" 14 - Exemplo Matriz");
+        System.out.println(" 15 - Exemplo de contagem de Matriz");
+        System.out.println(" 17 - ArrayList");
         System.out.println("------------------------------------------------");
         System.out.println("Digite um numero de um exercicio: ");
 
@@ -60,6 +64,21 @@ public class Menu {
                 break;
             case 12:
                 Questoes2.Aula5Exerc5();
+                break;
+            case 13:
+               Questoes2.Aula6Exerc1();
+                break;
+            case 14:
+                Questoes2.Aula6Exerc2();
+                break;
+            case 15:
+                Questoes2.Aula6Exerc3();
+                break;
+            case 16:
+                Questoes2.Aula6Exerc4();
+                break;
+            case 17:
+                Questoes2.Aula6Exerc5();
                 break;
             default:
                 System.out.println("OPCAO INVALIDA!");
