@@ -21,6 +21,9 @@ public class Menu {
         System.out.println(" 14 - Exemplo Matriz");
         System.out.println(" 15 - Exemplo de contagem de Matriz");
         System.out.println(" 17 - ArrayList");
+        System.out.println(" 18 - MatrizExemplo");
+        System.out.println(" 19 - MatrizAleatoria");
+        System.out.println(" 20 - Sudoku30%");
         System.out.println("------------------------------------------------");
         System.out.println("Digite um numero de um exercicio: ");
 
@@ -79,6 +82,15 @@ public class Menu {
                 break;
             case 17:
                 Questoes2.Aula6Exerc5();
+                break;
+            case 18:
+                Questoes2.MatrizEx();
+                break;
+            case 19:
+                Questoes2.MatrizAleatoria();
+                break;
+            case 20:
+                Questoes2.MatrizWith_();
                 break;
             default:
                 System.out.println("OPCAO INVALIDA!");

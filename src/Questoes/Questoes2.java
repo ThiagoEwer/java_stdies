@@ -3,6 +3,7 @@ import com.sun.tools.jconsole.JConsoleContext;
 import javax.annotation.processing.SupportedSourceVersion;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Questoes2 {
@@ -131,6 +132,71 @@ public class Questoes2 {
         }
         System.out.println("-----------------------------");
     }
+    public static void MatrizEx(){
+        //definindo o tamanho da matriz em 5x5
+        int[][] matriz = new int [5][5];
+
+        for(int linha = 0; linha<5;linha++ ){
+            for (int coluna = 0; coluna<5;coluna++){
+                matriz[linha][coluna]=linha++;
+            }
+        }
+
+        for (int linha=0; linha<5; linha++){
+            System.out.print("|");
+            for(int coluna = 0; coluna<5; coluna++) {
+                System.out.print(" " + matriz[linha][coluna] + " ");
+            }
+            System.out.println(" | ");
+        }
+
+    }
+    public static void MatrizAleatoria(){
+        int[][] matriz = new int [9][9];
+        Random aleatorio = new Random();
+
+
+        for (int linha = 0; linha < 9; linha++) {
+            for (int coluna = 0; coluna < 9; coluna++) {
+                if (matriz[linha][coluna] == 0) {
+                    matriz[linha][coluna] = aleatorio.nextInt(9) + 1;
+                }
+            }
+        }
+
+        for (int linha=0; linha<9; linha++){
+            System.out.print("|");
+            for(int coluna = 0; coluna<9; coluna++) {
+                System.out.print(" " + matriz[linha][coluna] + " ");
+            }
+            System.out.println(" | ");
+        }
+    }
+    public static void MatrizWith_(){
+        char[][] matriz = new char[9][9];
+        Random aleatorio = new Random();
+
+        for (int linha = 0; linha < 9; linha++) {
+            for (int coluna = 0; coluna < 9; coluna++) {
+                if (aleatorio.nextInt(2) == 0) { // 50% para gerar o _ ????
+                    matriz[linha][coluna] = (char) (aleatorio.nextInt(9) + '1');
+                } else {
+                    matriz[linha][coluna] = '_';
+                }
+            }
+        }
+
+        // Imprimindo a matriz
+        for (int linha = 0; linha < 9; linha++) {
+            System.out.print("|");
+            for (int coluna = 0; coluna < 9; coluna++) {
+                System.out.print(" " + matriz[linha][coluna] + " ");
+            }
+            System.out.println(" | ");
+        }
+
+    }
+
 
 
 }
