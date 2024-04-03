@@ -77,11 +77,12 @@ public class Lista2 {
             soma += numero;
         }
 
+        teclado.close();
+
         System.out.println("Menor valor: " + menor);
         System.out.println("Maior valor: " + maior);
         System.out.println("Soma dos valores: " + soma);
 
-        teclado.close();
     }
     public static void  NumerosMaiorMenorSoma_2() {
 
