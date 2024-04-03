@@ -18,6 +18,7 @@ public class Lista2 {
                 t1 = t2;
                 t2 = soma;
             }
+        teclado.close();
     }
     public static void Fibonacci_2(){
             System.out.println("Gerar Fibonacci até que o valor seja maior que 500.");

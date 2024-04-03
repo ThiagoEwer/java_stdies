@@ -1,8 +1,6 @@
 package Questoes;
-import com.sun.tools.jconsole.JConsoleContext;
-import javax.annotation.processing.SupportedSourceVersion;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -175,7 +173,6 @@ public class Questoes2 {
     public static void MatrizWith_(){
         char[][] matriz = new char[9][9];
         Random aleatorio = new Random();
-
         for (int linha = 0; linha < 9; linha++) {
             for (int coluna = 0; coluna < 9; coluna++) {
                 if (aleatorio.nextInt(2) == 0) { // 50% para gerar o _ ????
@@ -186,7 +183,6 @@ public class Questoes2 {
             }
         }
 
-        // Imprimindo a matriz
         for (int linha = 0; linha < 9; linha++) {
             System.out.print("|");
             for (int coluna = 0; coluna < 9; coluna++) {

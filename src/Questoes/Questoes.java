@@ -1,6 +1,6 @@
 package Questoes;
 
-import java.security.PublicKey;
+//import java.security.PublicKey;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.util.Random;

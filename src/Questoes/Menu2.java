@@ -1,6 +1,6 @@
 package Questoes;
 
-import java.util.List;
+//import java.util.List;
 import java.util.Scanner;
 public class Menu2 {
         public static void menu2() {
