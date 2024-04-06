@@ -1,7 +1,10 @@
-package Questoes;
+
+
+//import Questoes.Menu;
+import Revisao.MenuR;
 
 public class Principal {
     public static void main(String[] args) {
-        Menu.menu();
+        MenuR.MenuRevisao();
     }
 }
