@@ -1,9 +1,9 @@
-package Questoes;
+package Listas;
 
 //import java.util.List;
 import java.util.Scanner;
 public class Menu2 {
-        public static void menu2() {
+        public static void menu() {
             System.out.println("=========== LISTA DE EXERCICIOS 2 =============");
             System.out.println(" 1 - Fibonacci");
             System.out.println(" 2 - Fibonacci2");

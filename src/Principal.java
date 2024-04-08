@@ -1,10 +1,7 @@
-
-
-//import Questoes.Menu;
-import Revisao.MenuR;
+import Listas.Menu3;
 
 public class Principal {
     public static void main(String[] args) {
-        MenuR.MenuRevisao();
+        Menu3.menu();
     }
 }
