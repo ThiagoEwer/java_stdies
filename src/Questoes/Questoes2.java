@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Questoes2 {
-    //void é uma funcao que nao retorna nada.
+    //void é uma funcao que retorna vazio.
     //no caso abaixo, usaremos uma função do tipo String e não void para retornar um texto.
 
     /*public static String meuMetodo() {
