@@ -16,6 +16,7 @@ public class Revisao1 {
         Float soma = val2 + val1;
 
         System.out.println("A soma é: " + soma);
+        teclado.close();
 
     }
 
@@ -24,8 +25,8 @@ public class Revisao1 {
         LocalTime horaAtual = LocalTime.now();
         LocalDateTime dataEhora = LocalDateTime.now();
         System.out.println("Data:" + dataAtual);
-        System.out.println("Hora:" + dataAtual);
-        System.out.println("Data e Hora:" + dataAtual);
+        System.out.println("Hora:" + horaAtual);
+        System.out.println("Data e Hora:" + dataEhora);
 
     }
 
@@ -40,25 +41,26 @@ public class Revisao1 {
         int a = (int) d;
         System.out.println(a); // imprimirá 9
 
-        //COERSÃO IMPLICITA o compilador converte solo
+        // COERSÃO IMPLICITA o compilador converte solo
         int q = 9;
         double w = q;
         System.out.println(w); // imprimirá 9.0
 
-        //COERSÃO EXPLICITA ou Casting precisa da intervensção do DEV
+        // COERSÃO EXPLICITA ou Casting precisa da intervensção do DEV
         double r = 9.99;
         int t = (int) r;
         System.out.println(t); // imprimirá 9
 
     }
 
-    public static void SalarioMinimo () {
+    public static void SalarioMinimo() {
         final float salario2024 = 1412;
         System.out.println("Insira o valor do seu salario:");
         Scanner tec = new Scanner(System.in);
         float salarioUser = tec.nextFloat();
 
-        float difSalario = salarioUser-salario2024;
+        float difSalario = salarioUser - salario2024;
         System.out.println("A diferença salarial é de :" + difSalario);
+        tec.close();
     }
 }

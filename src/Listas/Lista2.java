@@ -5,23 +5,24 @@ import java.util.Scanner;
 public class Lista2 {
     public static void Fibonacci_1() {
         System.out.println("Escolha um numero inteiro para gerar a sequencia de fibonacci");
-          Scanner teclado = new Scanner(System.in);
-          int numero = teclado.nextInt();
+        Scanner teclado = new Scanner(System.in);
+        int numero = teclado.nextInt();
 
-            int t1 = 0;
-            int t2 = 1;
+        int t1 = 0;
+        int t2 = 1;
 
-            System.out.print("Até " + numero + ": ");
-            for (int i = 1; i <= numero; ++i) {
-                System.out.print(t1 + " + ");
-                int soma = t1 + t2;
-                t1 = t2;
-                t2 = soma;
-            }
+        System.out.print("Até " + numero + ": ");
+        for (int i = 1; i <= numero; ++i) {
+            System.out.print(t1 + " + ");
+            int soma = t1 + t2;
+            t1 = t2;
+            t2 = soma;
+        }
         teclado.close();
     }
-    public static void Fibonacci_2(){
-            System.out.println("Gerar Fibonacci até que o valor seja maior que 500.");
+
+    public static void Fibonacci_2() {
+        System.out.println("Gerar Fibonacci até que o valor seja maior que 500.");
         int t1 = 0;
         int t2 = 1;
 
@@ -32,28 +33,30 @@ public class Lista2 {
             int soma = t1 + t2;
             t1 = t2;
             t2 = soma;
-     }
+        }
     }
-    public static void Fatorial () {
+
+    public static void Fatorial() {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Digite um número para calcular o fatorial: ");
         int numero = teclado.nextInt();
         long fatorial = 1;
 
-        for(int i = 1; i <= numero; ++i) {
+        for (int i = 1; i <= numero; ++i) {
             fatorial *= i;
         }
 
         System.out.printf("O fatorial de %d é: %d", numero, fatorial);
         teclado.close();
     }
-    public static void  NumerosMaiorMenorSoma() {
+
+    public static void NumerosMaiorMenorSoma() {
 
         Scanner teclado = new Scanner(System.in);
         System.out.print("Quantos números deseja inserir? ");
         int n = teclado.nextInt();
 
-        //lembrar de criar a validação para o numero ser maior que 0
+        // lembrar de criar a validação para o numero ser maior que 0
         if (n <= 0) {
             System.out.println("Por favor, insira um número inteiro positivo.");
             return;
@@ -84,7 +87,8 @@ public class Lista2 {
         System.out.println("Soma dos valores: " + soma);
 
     }
-    public static void  NumerosMaiorMenorSoma_2() {
+
+    public static void NumerosMaiorMenorSoma_2() {
 
         Scanner teclado = new Scanner(System.in);
 
@@ -122,7 +126,8 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void MediaNNumeros(){
+
+    public static void MediaNNumeros() {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Quantas notas deseja calcular a média? ");
@@ -147,7 +152,8 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void MediaIdadeTurma(){
+
+    public static void MediaIdadeTurma() {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Quantas pessoas na turma? ");
@@ -180,7 +186,8 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void MediaAlunoTurma(){
+
+    public static void MediaAlunoTurma() {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite a quantidade de turmas: ");
@@ -211,7 +218,8 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void ProgramaCDs(){
+
+    public static void ProgramaCDs() {
 
         Scanner teclado = new Scanner(System.in);
         System.out.print("Digite a quantidade de CDs na coleção: ");
@@ -244,7 +252,8 @@ public class Lista2 {
 
         teclado.close();
     }
-    public static void Tabuada(){
+
+    public static void Tabuada() {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite o número para a tabuada: ");
@@ -265,5 +274,4 @@ public class Lista2 {
         teclado.close();
     }
 
-    }
-
+}

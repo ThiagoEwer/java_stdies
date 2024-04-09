@@ -1,7 +1,7 @@
-import Listas.Menu3;
+import Revisao.MenuR;
 
 public class Principal {
     public static void main(String[] args) {
-        Menu3.menu();
+        MenuR.MenuRevisao();;
     }
 }
