@@ -209,7 +209,7 @@ public class Lista3 {
         arrayList.add("Abacaxi");
         arrayList.add("Uva");
 
-        //elemento a ser procurado.
+        // elemento a ser procurado.
         String elemento = "Laranja";
 
         int indice = arrayList.indexOf(elemento);
@@ -234,8 +234,9 @@ public class Lista3 {
 
         System.out.println("ArrayList invertido:");
         System.out.println(arrayList);
-        
+
     }
+
     public static void ArrayList4() {
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("Maçã");
@@ -253,6 +254,7 @@ public class Lista3 {
             System.out.println("Falha ao remover todos os elementos.");
         }
     }
+
     public static void ArrayList5() {
 
         ArrayList<Integer> arrayList = new ArrayList<>();

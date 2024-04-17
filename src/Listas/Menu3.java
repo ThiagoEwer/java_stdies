@@ -52,7 +52,8 @@ public class Menu3 {
                 Lista3.Matriz1();
                 break;
             case 9:
-                Lista3.Matriz2();;
+                Lista3.Matriz2();
+                ;
                 break;
             case 10:
                 Lista3.ArrayList1();
