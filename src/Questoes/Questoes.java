@@ -233,6 +233,8 @@ public class Questoes {
         String primeiroNome = nomeCompleto.substring(0,nomeCompleto.indexOf(" "));
         System.out.println("Seu primeiro nome é: "+primeiroNome);
         //Incompleto
+
+        inputText.close();
         }
 
     public static void Aula4Exerc4(){
