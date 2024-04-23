@@ -1,7 +1,7 @@
-import POO.Contato.Agenda;
+import POO.Dado.CalcDados;
 
 public class Principal {
     public static void main(String[] args) {
-        Agenda.NovaAgenda();
+        CalcDados.Calculo();
     }
 }

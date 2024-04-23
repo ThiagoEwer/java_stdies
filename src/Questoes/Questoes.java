@@ -247,6 +247,7 @@ public class Questoes {
 
         int espaco = nomeCompleto.indexOf(' ');
 
+        @SuppressWarnings("unused")
         String primeiroNome = nomeCompleto.substring(0,espaco);
         String charPrimeiroNome = nomeCompleto.substring(0,1).toLowerCase();
         String ultimoNome = nomeCompleto.substring(nomeCompleto.lastIndexOf(' ') + 1).toLowerCase(); //parte do professor

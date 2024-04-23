@@ -186,6 +186,7 @@ public class Lista2 {
     }
 
     public static void MediaAlunoTurma() {
+        @SuppressWarnings("resource")
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite a quantidade de turmas: ");
