@@ -1,4 +1,4 @@
-package POO.Dado;
+package POO.Aula7.Dado;
 
 import java.util.Scanner;
 

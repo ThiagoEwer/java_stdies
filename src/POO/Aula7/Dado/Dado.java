@@ -1,4 +1,4 @@
-package POO.Dado;
+package POO.Aula7.Dado;
 
 public class Dado {
     private int lados;

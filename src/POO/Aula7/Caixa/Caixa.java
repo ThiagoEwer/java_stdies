@@ -1,4 +1,4 @@
-package POO.Caixa;
+package POO.Aula7.Caixa;
 
 public class Caixa {
   public static void atm(){
