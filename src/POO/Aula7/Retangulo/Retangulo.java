@@ -1,4 +1,4 @@
-package POO.Retangulo;
+package POO.Aula7.Retangulo;
 
 public class Retangulo {
     private double base;

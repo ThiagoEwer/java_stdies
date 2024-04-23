@@ -1,4 +1,4 @@
-package POO.Contato;
+package POO.Aula7.Contato;
 
 import java.util.Scanner;
 
