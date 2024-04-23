@@ -1,4 +1,4 @@
-package POO.Contato;
+package POO.Aula7.Contato;
 
 public class Contato {
     private String nome;
