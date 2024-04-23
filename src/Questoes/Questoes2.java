@@ -37,6 +37,8 @@ public class Questoes2 {
             acumulador += teclado.nextFloat();
         }
         System.out.println(acumulador / quantidadeNumeros);
+        
+        teclado.close();
 
     }
 
@@ -52,6 +54,7 @@ public class Questoes2 {
              System.out.print(i);
          }
          System.out.println(" O fatorial de "+ numero+ " é: " + fatorial);
+         teclado.close();
 
      }
      public static void Aula6Exerc1 (){
@@ -71,6 +74,7 @@ public class Questoes2 {
              somatorioIdade += pessoa;
          }
         System.out.println("A média de idade é: "+(somatorioIdade/pessoas.length));
+        teclado.close();
 
     }
     public static void Aula6Exerc2(){

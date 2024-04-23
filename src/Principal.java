@@ -1,9 +1,7 @@
-import POO.Caixa.Caixa;
-import POO.Caixa.Conta;
-import POO.Caixa.Pessoa;
+import POO.Dado.CalcDados;
 
 public class Principal {
     public static void main(String[] args) {
-     //   Menu.menu();
+        CalcDados.Calculo();
     }
 }

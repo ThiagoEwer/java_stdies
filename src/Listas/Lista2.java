@@ -3,6 +3,7 @@ package Listas;
 import java.util.Scanner;
 
 public class Lista2 {
+
     public static void Fibonacci_1() {
         System.out.println("Escolha um numero inteiro para gerar a sequencia de fibonacci");
         Scanner teclado = new Scanner(System.in);
@@ -59,7 +60,6 @@ public class Lista2 {
         // lembrar de criar a validação para o numero ser maior que 0
         if (n <= 0) {
             System.out.println("Por favor, insira um número inteiro positivo.");
-            return;
         }
 
         int menor = Integer.MAX_VALUE;
@@ -135,7 +135,6 @@ public class Lista2 {
 
         if (n <= 0) {
             System.out.println("Por favor, insira um número inteiro positivo.");
-            return;
         }
 
         double soma = 0;
@@ -161,7 +160,6 @@ public class Lista2 {
 
         if (n <= 0) {
             System.out.println("Por favor, insira um número inteiro positivo.");
-            return;
         }
 
         int somaIdades = 0;
@@ -188,6 +186,7 @@ public class Lista2 {
     }
 
     public static void MediaAlunoTurma() {
+        @SuppressWarnings("resource")
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Digite a quantidade de turmas: ");
@@ -227,7 +226,6 @@ public class Lista2 {
 
         if (quantidadeCDs <= 0) {
             System.out.println("Por favor, insira um número inteiro positivo para a quantidade de CDs.");
-            return;
         }
 
         double totalInvestido = 0;
