@@ -1,7 +1,7 @@
-import POO.Retangulo.Area;
+import POO.Contato.Agenda;
 
 public class Principal {
     public static void main(String[] args) {
-        Area.seletArea();
+        Agenda.NovaAgenda();
     }
 }
