@@ -1,7 +1,7 @@
-import POO.Aula7.Dado.CalcDados;
+import POO.ATIVIDADES.PrincipalExerc;
 
 public class Principal {
     public static void main(String[] args) {
-        CalcDados.Calculo();
+        PrincipalExerc.execut(args);
     }
 }
