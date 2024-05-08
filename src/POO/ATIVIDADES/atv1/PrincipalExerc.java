@@ -1,9 +1,10 @@
-package POO.ATIVIDADES;
+package POO.ATIVIDADES.atv1;
 
 import java.util.Scanner;
 
 public class PrincipalExerc {
-    public static void main(String[] args) {
+    @SuppressWarnings("resource")
+    public static void execut(String[] args) {
         // Criando as disciplinas
         Disciplina disciplina1 = new Disciplina("001", "Matemática");
         Disciplina disciplina2 = new Disciplina("002", "Português");
@@ -40,6 +41,8 @@ public class PrincipalExerc {
         double nota2 = tec.nextDouble();
         System.out.println("Digite a nota 3 de " + disciplinaSelecionada.getNome() + ":");
         double nota3 = tec.nextDouble();
+
+        tec.close();
 
         // Setando as notas na disciplina selecionada
         disciplinaSelecionada.setNota1(nota1);

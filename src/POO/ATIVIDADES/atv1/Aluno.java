@@ -1,4 +1,4 @@
-package POO.ATIVIDADES;
+package POO.ATIVIDADES.atv1;
 
 import java.util.ArrayList;
 
